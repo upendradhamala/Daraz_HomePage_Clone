@@ -1,13 +1,120 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+:root{
+  --topColor:rgb(236,236,236);
+  --middleColor:rgb(245,245,245);
+  --footerColor:rgb(241,241,241);
+  --darazColor:rgb(245,114,36);
+}
+li{
+  list-style-type: none;
+}
+.home-container{
+  width:1368px;
+  height:200vh;
+}
+.navbar-top{
+background-color: var(--topColor);
+display: flex;
+width: 100%;
+
+height:25px;
+align-items: center;
+}
+.navbar-top-left{
+  flex:40%;
+}
+.navbar-top-right{
+  flex:60%;
+  display: flex;
+  align-items: center;
+}
+.navbar-top-right ul{
+  display: flex;
+  align-items: center;
+}
+.navbar-top-right ul li{
+  font-size: 12px;
+  padding: 0 17px;
+
+
+}
+a{
+  text-decoration: none;
+  color:black;
+
+}
+.navbar-top-right ul li a{
+transition: 0.25s color ease-in-out;
+
+}
+.navbar-top-right ul li a:hover{
+  text-decoration: underline;
+  color: var(--darazColor) ;
+
+}
+.li-first{
+  color: var(--darazColor) ;
+}
+
+.navbar-mid{
+  height:75px;
+  padding-top: 11px;
+  display: flex;
+  align-items: center;
+  padding:0 50px;
+  position: sticky;
+  top:25px;
+  position: sticky;  
+  position: -webkit-sticky;
+    top:0px;
+}
+
+.daraz-icon{
+  flex:20%;
+  object-fit: contain;
+  width:135px;
+  height:45px;
+}
+.search-box{
+  flex:50%;
+  display: flex;
+  align-items: center;
+
+}
+.search-box input{
+  width:90%;
+  padding:15px;
+  background: var(--middleColor);
+  outline: none;
+  border:none;
+}
+
+.nav-ada{
+  object-fit:fill;
+  width:10px;
+  height:55px;  
+
+  flex:15%;
+  padding:5px;
+
+}
+.fa-search{
+  background: var(--darazColor);
+  color:white;
+  padding:15px;
+}
+
+.fa-shopping-cart{
+  padding:15px;
+  font-size: 20px;
+  flex:5%;
+  text-align: center;
+
 }
