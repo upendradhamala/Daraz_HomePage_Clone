@@ -11,12 +11,15 @@
   --middleColor:rgb(245,245,245);
   --footerColor:rgb(241,241,241);
   --darazColor:rgb(245,114,36);
+  --textColor:rgb(64,181,224);
 }
 li{
   list-style-type: none;
 }
 .home-container{
-  width:1368px;
+  /* border: 1px solid red; */
+
+  width:1350px;
   height:200vh;
 }
 .navbar-top{
@@ -61,6 +64,7 @@ transition: 0.25s color ease-in-out;
 }
 .li-first{
   color: var(--darazColor) ;
+  text-decoration: underline;
 }
 
 .navbar-mid{
@@ -70,9 +74,11 @@ transition: 0.25s color ease-in-out;
   align-items: center;
   padding:0 50px;
   position: sticky;
+  z-index: 1000;
   top:25px;
   position: sticky;  
   position: -webkit-sticky;
+  background: rgb(255,255,255);
     top:0px;
 }
 
@@ -117,4 +123,91 @@ transition: 0.25s color ease-in-out;
   flex:5%;
   text-align: center;
 
+}
+
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 400px;
+  margin-left: 50px;
+  /* border:1px solid red; */
+  /* width:1366px; */
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+.main-top{
+  position: relative;
+}
+.menu-list{
+  position: absolute;
+  top:0px;
+  left:150px;
+  width:200px;
+  height:100%;
+  background: white;
+  display: flex;
+ 
+
+}
+
+.menu-list ul{
+  /* border: 1px solid red; */
+  height:100%;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* fon; */
+  /* justify-content: space-between; */
+
+}
+
+.menu-list ul li{
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  opacity: 0.6;
+  width: 100%;
+  /* border: 1px solid red; */
+  padding: 5px;
+  align-items: center;
+
+}
+.menu-list ul li:hover::after{
+  font-family: "Font Awesome 5 Free";
+   font-weight: 600;
+   font-size: 15px;
+  content:"\f531";
+  
+
+
+}
+
+.menu-list li:hover{
+  color:var(--textColor);
+  opacity: 1;
+  cursor: pointer;
+  background: var(--middleColor);
+
+}
+.list-item-1{position: relative;}
+.secondary-list-item{
+  display:none !important;
+  border:1px solid red;
+  position: absolute;
+  left:100px;
+  background: white;
+  color:black;
+}
+.show-list-item{
+  display: block !important;
 }
