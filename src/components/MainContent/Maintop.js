@@ -9,11 +9,7 @@ const Maintop = () => {
     'Images/3.jpg',
     'Images/4.jpg',
   ]
-  const displayItems = () => {
-    document
-      .getElementById('secondary-list-item')
-      .classList.toggle('show-list-item')
-  }
+
   return (
     <div className='main-top'>
       <Slide easing='ease'>
@@ -67,26 +63,80 @@ const Maintop = () => {
         </div>
       </Slide>
       <div className='menu-list'>
-        <ul>
-          <li className='list-item-1' onMouseOver={displayItems}>
+        <ul className='list-item-0'>
+          <li className='list-item-1'>
             Electronic Devices
-            <ul className='secondary-list-item' id='secondary-list-item'>
-              <li>Mobile</li>
-              <li>Tv</li>
+            <ul className='secondary-list-item'>
+              <li className='list-item-11'>
+                Mobile
+                <ul className='tertiary-list-item'>
+                  <li>Xiomi</li>
+                  <li>Iphone</li>
+                  <li>Samsung</li>
+                </ul>
+              </li>
+              <li className='list-item-11'>
+                Tv
+                <ul className='tertiary-list-item'>
+                  <li>Konka</li>
+                  <li>CG</li>
+                  <li>LG</li>
+                  <li>Motorola</li>
+                  <li>Sony</li>
+                </ul>
+              </li>
               <li>Fridge</li>
               <li>Washing Machine</li>
             </ul>
           </li>
-          <li className='list-item-2'>Electronic Accessories</li>
-          <li className='list-item-3'>Health & Beauty</li>
-          <li className='list-item-4'>Babies & Toys</li>
-          <li className='list-item-5'>Groceries & Pets</li>
-          <li className='list-item-6'>Home & Lifestyle</li>
-          <li className='list-item-7'>Women's Fashion</li>
-          <li className='list-item-8'>Men's Fashion</li>
-          <li className='list-item-9'>Watches & Accessories</li>
-          <li className='list-item-10'>Sports & Outdoor</li>
-          <li className='list-item-11'>Automotive & Motorbike</li>
+          <li className='list-item-1'>
+            Electronic Accessories
+            <ul className='secondary-list-item'>
+              <li className='list-item-11'>
+                Mobile
+                <ul className='tertiary-list-item'>
+                  <li>Phone Cases</li>
+                  <li>Covers</li>
+                  <li>Power Banks</li>
+                </ul>
+              </li>
+
+              <li>Audio Devices</li>
+              <li>Video Devices</li>
+            </ul>
+          </li>
+          <li className='list-item-1'>
+            Health & Beauty
+            <ul className='secondary-list-item'>
+              <li className='list-item-11'>
+                Bath & Body
+                <ul className='tertiary-list-item'>
+                  <li> Bath & Body Accessories</li>
+                  <li>Deodorants</li>
+                  <li>Body Scrubs</li>
+                  <li>Hand Care</li>
+                </ul>
+              </li>
+              <li className='list-item-11'>
+                Beauty Tools
+                <ul className='tertiary-list-item'>
+                  <li>Curling Irons & Wands</li>
+                  <li>Flat Irons</li>
+                  <li>Hair Dryers</li>
+                  <li>Hair Removal Appliances</li>
+                </ul>
+              </li>
+              <li>Fragrances</li>
+            </ul>
+          </li>
+          <li className='list-item-1'>Babies & Toys</li>
+          <li className='list-item-1'>Groceries & Pets</li>
+          <li className='list-item-1'>Home & Lifestyle</li>
+          <li className='list-item-1'>Women's Fashion</li>
+          <li className='list-item-1'>Men's Fashion</li>
+          <li className='list-item-1'>Watches & Accessories</li>
+          <li className='list-item-1'>Sports & Outdoor</li>
+          <li className='list-item-1'>Automotive & Motorbike</li>
         </ul>
       </div>
     </div>
