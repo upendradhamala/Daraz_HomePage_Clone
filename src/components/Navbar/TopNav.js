@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const TopNav = () => {
   return (
     <>
@@ -8,27 +8,27 @@ const TopNav = () => {
         <div className='navbar-top-right'>
           <ul>
             <li>
-              <a className='li-first' href=''>
+              <Link to='' className='li-first'>
                 SAVE MORE ON APP
-              </a>
+              </Link>
             </li>
             <li>
-              <a href=''>SELL ON DARAZ</a>
+              <Link to=''>SELL ON DARAZ</Link>
             </li>
             <li>
-              <a href=''>CUSTOMER CARE</a>
+              <Link to=''>CUSTOMER CARE</Link>
             </li>
             <li>
-              <a href=''>TRACK MY ORDER</a>
+              <Link to=''>TRACK MY ORDER</Link>
             </li>
             <li>
-              <a href=''>LOGIN</a>
+              <Link to=''>LOGIN</Link>
             </li>
             <li>
-              <a href=''>SIGN UP</a>
+              <Link to=''>SIGN UP</Link>
             </li>
             <li>
-              <a href=''>भाषा परिवर्तन</a>
+              <Link to=''>भाषा परिवर्तन</Link>
             </li>
           </ul>
         </div>
@@ -39,9 +39,9 @@ const TopNav = () => {
           <input type='text' placeholder='Search in Daraz' />
           <i className='fas fa-search'></i>
         </div>
-        <a href=''>
+        <Link to=''>
           <i className='fas fa-shopping-cart'></i>
-        </a>
+        </Link>
         <img src='./Images/add1.gif' alt='' className='nav-ada' />
       </div>
     </>

@@ -20,7 +20,7 @@ li{
   /* border: 1px solid red; */
 
   width:1350px;
-  height:200vh;
+  /* height:200vh; */
 }
 .navbar-top{
 background-color: var(--topColor);
@@ -280,12 +280,235 @@ box-shadow: -1px 2px 9px -1px rgba(0,0,0,0.25);
 width:32px;
 }
 
-.functions ul li{
+.functions ul .center-elements{
   display: flex;
   align-items: center;
-  gap:10px;
+  gap:5px;
   background: white;
-  padding:5px;
+  padding:3px;
   border-radius: 20px;
-  width: 220px;
+  width: 223px;
+
+}
+.center-elements:hover{
+  color:var(--darazColor);
+  -webkit-box-shadow: 1px 2px 23px -6px rgba(0,0,0,0.23); 
+box-shadow: 1px 2px 23px -6px rgba(0,0,0,0.23);
+ 
+
+}
+.center-elements span{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
+}
+.center-elements:hover span::after{
+  font-family: "Font Awesome 5 Free";
+   font-weight: 600;
+   font-size: 12px;
+  content:"\f531";
+  align-self:center;
+
+  
+}
+
+.note{
+  font-size:22px;
+  opacity: 0.7;
+  
+  letter-spacing: 0.01cm;
+}
+.product-list{
+  display: grid;
+  margin-top: 10px;
+  padding: 5px;
+  grid-gap:10px ;
+  row-gap: 15px;
+  /* column-gap: 15px; */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.previousPrice{
+text-decoration: line-through;
+font-size: 12px;
+color:rgb(158,158,158);
+}
+.product-cover{
+  display: flex;
+  padding:5px;
+  flex-direction: column;
+  background: white;
+  height: 330px;
+ 
+
+}
+.dpercent{
+  font-size: 12px;
+  margin-left: 5px;
+  opacity: 0.8;
+
+}
+
+.product-cover img{
+  height:189px;
+  width:189px;
+  object-fit: contain;
+}
+.productname{
+  margin-top: 10px;
+  height:34px;
+  overflow: hidden;
+  font-size: 13px;
+  opacity: 0.8;
+  line-height: 18px;
+  letter-spacing: 0.001em;
+  margin-bottom: 4px;
+
+}
+
+.productprice{
+  font-size: 18px;
+  color:var(--darazColor)
+}
+
+.reviewsno{
+  font-size: 12px;
+  color:rgb(158,158,158);
+  margin-left: 3px;
+  margin-top: 2px;
+
+
+}
+.reviews-section{
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.star-section .fas, .far{
+  color:rgb(250,202,81);
+  font-size: 11px;
+}
+
+.message-box{
+  width: 160px;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  padding-left: 10px;
+  /* justify-content: center; */
+  align-items: center;
+  background: white;
+  right: 35px;
+  z-index: 1000;
+  font-size: 18px;
+  color: rgb(27,66,94);
+  -webkit-box-shadow: 5px 5px 27px 5px rgba(0,0,0,0.29); 
+box-shadow: 5px 5px 27px 5px rgba(0,0,0,0.29);
+}
+
+.product-cover:hover{
+  -webkit-box-shadow: 1px 1px 18px -7px rgba(0,0,0,0.35); 
+box-shadow: 1px 1px 18px -7px rgba(0,0,0,0.35);
+}
+.loadmore{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.loadmore button{
+  width:30%;
+  padding:15px;
+  background: white;
+  height:30px;
+  text-align: center;
+  border:1.3px solid var(--textColor);
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color:var(--textColor);
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+
+
+}
+
+.footertop{
+  margin-top: 15px;
+  height:260px;
+  background: rgb(46,46,84);
+  display: flex;
+  padding-top:25px;
+  
+  color:white;
+}
+.footertop h3{
+  font-weight: normal;
+}
+
+.footertopleft{
+  flex:27%;
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.footertopleft ul{
+  margin-top: 10px;
+  font-size: 12px;
+}
+.footertopmiddle{
+  flex:27%;
+}
+.footertopmiddle ul{
+  margin-top: 10px;
+  font-size: 12px;
+}
+.footertopright{
+  flex: 46%;
+}
+.footertoprighttop{
+  display: flex;
+  gap:20px;
+}
+.footertoprighttop img{
+  height:100px;
+  border-radius: 10px;
+  width:100px;
+  object-fit: contain;
+}
+.shopping{
+  align-self:flex-end;
+  display: flex;
+  flex-direction: column;
+  
+}
+.shopping span{
+  font-size: 14px;
+}
+.shopping img{
+  height:42px;
+  width:42px;
+  object-fit: contain;
+}
+
+.happy{
+  color:#F57224;
+}
+.footertoprightbottom{
+  margin-top: 20px;
+}
+.footertoprightbottom img{
+  height:40px;
+  width:134px;
+  object-fit: contain;
+  margin-right: 8px;
+  border-radius: 5px;
 }
