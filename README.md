@@ -1,6 +1,5 @@
 # Homepage clone of popular ecommerce website DARAZ
 
-(https://github.com/facebook/create-react-app).
 
 ### `Click the link below to see the demo`
 
