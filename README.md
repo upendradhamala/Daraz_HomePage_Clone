@@ -4,4 +4,4 @@
 
 ### `Click the link below to see the demo`
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [https://daraz-home-page.netlify.app/](https://daraz-home-page.netlify.app/) to view it in the browser.
